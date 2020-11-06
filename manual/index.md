@@ -266,7 +266,7 @@ def m1(x: Int) = {
   println(y)
 }
 
-val e = Evt[Int]
+val e = Evt[Int]()
 val o1 = e observe m1 _
 e.fire(10)
 ```
@@ -703,9 +703,9 @@ The acc parameter reflects the current state.
 
 
 ```scala
-val word = Evt[String]
-val count = Evt[Int]
-val reset = Evt[Unit]
+val word = Evt[String]()
+val count = Evt[Int]()
+val reset = Evt[Unit]()
 val result = Events.foldAll(""){ acc => Events.Match(
   reset >> (_ => ""),
   word >> identity,
