@@ -6,6 +6,10 @@ class: center-block col-sm-9
 
 # Publications
 
+[ReactiFi: Reactive Programming of Wi-Fi Firmware on Mobile Devices](https://doi.org/10.22152/programming-journal.org/2021/5/4)<br>
+Artur Sterz, Matthias Eichholz, Ragnar Mogk, Lars Baumgärtner, Pablo Graubner, Matthias Hollick, Mira Mezini, and Bernd Freisleben<br>
+Programming 2021
+
 [A Fault-Tolerant Programming Model for Distributed Interactive Applications](https://doi.org/10.1145/3360570)<br>
 Ragnar Mogk, Joscha Drechsler, Guido Salvaneschi, and Mira Mezini<br>
 OOPSLA 2019
