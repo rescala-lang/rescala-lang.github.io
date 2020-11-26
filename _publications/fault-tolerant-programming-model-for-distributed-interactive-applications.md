@@ -10,8 +10,7 @@ collaborators:
   - Joscha Drechsler
   - Guido Salvaneschi
   - Mira Mezini
-pdf: "https://google.com"
-slides: "https://google.com"
+slides: "https://www.youtube.com/watch?v=VLi6wktoE-8"
 event: "OOPSLA 2019"
 link: "https://doi.org/10.1145/3360570"
 ---

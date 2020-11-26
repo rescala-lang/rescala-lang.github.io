@@ -10,8 +10,6 @@ collaborators:
   - Ragnar Mogk
   - Guido Salvaneschi
   - Mira Mezini
-pdf: #
-slides: #
-event: " OOPSLA 2018"
+event: "OOPSLA 2018"
 link: "https://dl.acm.org/citation.cfm?id=3276477"
 ---

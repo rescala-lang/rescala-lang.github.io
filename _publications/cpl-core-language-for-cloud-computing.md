@@ -8,8 +8,7 @@ collaborators:
   - Sebastian Erdweg
   - Guido Salvaneschi
   - Mira Mezini
-pdf: "https://google.com"
-slides: "https://google.com"
+pdf: "https://arxiv.org/abs/1602.00981"
 event: "MODULARITY 2016"
 link: "https://dl.acm.org/citation.cfm?id=2889452"
 ---

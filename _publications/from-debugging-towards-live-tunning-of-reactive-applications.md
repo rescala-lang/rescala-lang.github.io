@@ -14,8 +14,6 @@ collaborators:
   - David Richter
   - Guido Salvaneschi
   - Mira Mezini
-pdf: "http://www.st.informatik.tu-darmstadt.de/preprints/From-Debugging-Towards-Live-Tuning-of-Reactive-Applications.pdf"
-slides: #
 event: "LIVE 2018"
 link: "https://doi.org/10.1145/3360570"
 ---

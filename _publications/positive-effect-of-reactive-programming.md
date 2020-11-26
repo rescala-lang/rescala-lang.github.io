@@ -9,8 +9,7 @@ collaborators:
   - Sven Amann
   - Sarah Nadi
   - Mira Mezini
-pdf: "https://google.com"
-slides: "https://google.com"
+pdf: "http://www.guidosalvaneschi.com/attachments/papers/2017_On-the-Positive-Effect-of-Reactive-Programming-on-Software-Comprehension-An-Empirical-Study_pdf.pdf"
 event: "IEEE 2017"
 link: "http://ieeexplore.ieee.org/document/7827078/"
 ---

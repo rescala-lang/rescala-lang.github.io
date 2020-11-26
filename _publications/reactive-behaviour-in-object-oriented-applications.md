@@ -6,8 +6,7 @@ abstract: "Reactive applications are difficult to implement. Traditional solutio
 collaborators:
   - Guido Salvaneschi
   - Mira Mezini
-pdf: "https://google.com"
-slides: "https://google.com"
+pdf: "http://www.guidosalvaneschi.com/attachments/presentations/2013_reactive-applications-salvaneschi.pdf"
 event: "MODULARITY 2013"
 link: "https://dl.acm.org/citation.cfm?id=2451442"
 ---

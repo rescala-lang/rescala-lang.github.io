@@ -8,8 +8,7 @@ collaborators:
   - Sven Amann
   - Sebastian Proksch
   - Mira Mezini
-pdf: "https://google.com"
-slides: "https://google.com"
+pdf: "http://www.guidosalvaneschi.com/attachments/papers/2014_An-Empirical-Study-on-Program-Comprehension-with-Reactive-Programming_pdf.pdf"
 event: "FSE 2014"
-link: "https://dl.acm.org/citation.cfm?id=2635895"
+link: "https://doi.org/10.1145/2635868.2635895"
 ---

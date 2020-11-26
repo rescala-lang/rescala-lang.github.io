@@ -7,8 +7,7 @@ collaborators:
   - Guido Salvaneschi
   - Alessandro Margara
   - Giordano Tamburrelli
-pdf: "https://google.com"
-slides: "https://google.com"
+pdf: "https://margara.faculty.polimi.it/papers/icse15_tech_briefing.pdf"
 event: "ICSE 2015"
 link: "http://ieeexplore.ieee.org/document/7203125/"
 ---

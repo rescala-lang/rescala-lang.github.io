@@ -11,8 +11,6 @@ collaborators:
   - Ragnar Mogk
   - Guido Salvaneschi
   - Mira Mezini
-pdf: "https://google.com"
-slides: "https://google.com"
 event: "Programming Experience Workshop 2018"
 link: "https://dl.acm.org/citation.cfm?id=3214337"
 ---

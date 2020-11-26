@@ -9,8 +9,7 @@ collaborators:
   - Guido Salvaneschi
   - Gerold Hintz
   - Mira Mezini
-pdf: "https://google.com"
-slides: "https://google.com"
+pdf: "http://www.guidosalvaneschi.com/attachments/papers/2014_REScala-Bridging-The-Gap-Between-Object-Oriented-And-Functional-Style-In-Reactive-Applications_pdf.pdf"
 event: "MODULARITY 2014"
-link: "https://dl.acm.org/citation.cfm?id=2577083"
+link: "https://doi.org/10.1145/2577080.2577083"
 ---

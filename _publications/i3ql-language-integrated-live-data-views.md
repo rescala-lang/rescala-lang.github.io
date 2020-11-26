@@ -11,8 +11,7 @@ collaborators:
   - Mirko Kohler
   - Mira Mezini
   - Guido Salvaneschi
-pdf: "https://google.com"
-slides: "https://google.com"
+pdf: "https://www.informatik.uni-marburg.de/~seba/publications/i3QL.pdf"
 event: "OOPSLA 2014"
 link: "https://dl.acm.org/citation.cfm?id=2660242"
 ---

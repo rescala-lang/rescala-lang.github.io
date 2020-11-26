@@ -9,8 +9,7 @@ collaborators:
   - Guido Salvaneschi
   - Joscha Drechsler
   - Mira Mezini
-pdf: "https://google.com"
-slides: "https://google.com"
+pdf: "http://www.guidosalvaneschi.com/attachments/papers/2013_Towards-Distributed-Reactive-Programming_pdf.pdf"
 event: "COORDINATION 2013"
 link: "https://link.springer.com/chapter/10.1007%2F978-3-642-38493-6_16"
 ---
