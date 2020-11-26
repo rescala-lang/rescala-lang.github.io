@@ -1,0 +1,85 @@
+---
+title: Manual
+layout: internal
+---
+
+<div class="container-fluid background-manual">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-12 pt-3 pb-5">
+        <div class="sticky-top pt-5">
+          <div id="toc-container">
+            <h3 id="toc-title">User Manual</h3>
+            <ol id="toc" class="list-group"></ol>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-lg-8 col-12 background-white py-3 pl-lg-5 pl-3 md-content"
+      >
+        <div id="md-manual" class="pt-5">
+          {% capture markdown %}{% include_relative content.md %}{% endcapture
+          %} {{ markdown | markdownify }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function elem(tag, elems, attrs) {
+    var parent = document.createElement(tag);
+    if (attrs) Object.entries(attrs).forEach((kv) => (parent[kv[0]] = kv[1]));
+    if (elems) elems.forEach((x) => parent.appendChild(x));
+    return parent;
+  }
+
+  function queryAll(s) {
+    return Array.prototype.slice.call(document.querySelectorAll(s));
+  }
+
+  function query(s) {
+    return document.querySelector(s);
+  }
+
+  // wait for HTML to finish loading, as we need document.body
+  window.onload = function () {
+    var toc = query("#toc");
+    if (toc) {
+      var currentList = toc;
+      var currentDepth = 1;
+
+      var numbering = [0, 0, 0, 0, 0];
+      var headlines = queryAll(
+        "#md-manual>h1, #md-manual>h2, #md-manual>h3, #md-manual>h4, #md-manual>h5, #md-manual>h6"
+      );
+      headlines.forEach((headline, i) => {
+        var depth = parseInt(headline.nodeName[1]); // 1, 2, 3, 4
+        ++numbering[depth];
+        numbering.forEach((_, i) => (i > depth ? (numbering[i] = 0) : 0));
+        var chapter = numbering.slice(1, depth + 1).join(".") + ". ";
+        headline.textContent = chapter + headline.textContent;
+
+        for (; currentDepth < depth; currentDepth++)
+          currentList = currentList.lastChild.lastChild;
+        for (; currentDepth > depth; currentDepth--)
+          currentList = currentList.parentNode.parentNode;
+
+        var link = elem("a", [], {
+          textContent: headline.textContent,
+          href: "#" + headline.id,
+        });
+        var div = elem("div", [link]);
+        var hasSubsections =
+          headlines[i + 1] && parseInt(headlines[i + 1].nodeName[1]) > depth;
+        if (!hasSubsections) currentList.appendChild(div);
+        else
+          currentList.appendChild(
+            elem("details", [elem("summary", [div]), elem("div")], {
+              open: false,
+            })
+          );
+      });
+    }
+  };
+</script>

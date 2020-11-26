@@ -1,0 +1,104 @@
+<div class="container-fluid background-navbar">
+  <div class="container py-lg-3 py-2">
+    <div class="navbar navbar-expand-lg justify-content-between px-0">
+      <a href="{{ site.baseurl }}">
+        <div class="nav-brand"></div>
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <img src="{{ site.baseurl }}/assets/images/icons/burger.svg" />
+      </button>
+
+      <div
+        class="collapse navbar-collapse weight-500 justify-content-end"
+        id="navbarSupportedContent"
+      >
+        <div class="navbar-nav align-items-lg-center">
+          {% for link in site.data.navbar %} {% unless link contains 'dropdown'
+          %}
+          <div class="nav-item ml-0 ml-lg-5">
+            <a class="nav-link" href="{{ site.baseurl }}{{ link.url }}"
+              >{{ link.title }}</a
+            >
+          </div>
+          {% endunless %} {% if link.dropdown %}
+          <div class="nav-item ml-5 dropdown">
+            <a
+              href="{{ site.baseurl }}{{ link.url }}"
+              class="nav-link dropdown-toggle"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              data-hover="dropdown"
+              >{{ link.title }}</a
+            >
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              {% for name in link.dropdown %}
+              <a class="dropdown-item" href="{{ site.baseurl }}{{ name.url }}"
+                >{{ name.name }}</a
+              >
+              {% endfor %}
+            </div>
+          </div>
+          {% endif %} {% endfor %}
+          <div class="ml-5 d-lg-block d-none">
+            <a class="pill-left" href="/scaladoc/rescala/default$.html">DOCS</a>
+            <a
+              class="pill-right"
+              href="https://github.com/rescala-lang/REScala"
+              target="_blank"
+              rel="noopener"
+              >REPO</a
+            >
+          </div>
+          <div class="nav-item ml-0 ml-lg-5 d-block d-lg-none">
+            <a class="nav-link" href="/scaladoc/rescala/default$.html"
+              >Documentation</a
+            >
+          </div>
+          <div class="nav-item ml-0 ml-lg-5 d-block d-lg-none">
+            <a
+              class="nav-link"
+              href="https://github.com/rescala-lang/REScala"
+              target="_blank"
+              rel="noopener"
+              >Repository</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  $(".navbar-nav .dropdown > a").click(function () {
+    if (!$(this).hasClass("parent-clicked")) {
+      $(this).addClass("parent-clicked");
+    } else {
+      location.href = this.href;
+    }
+  });
+
+  $(".navbar-nav.nav-item > a").click(function () {
+    if (!$(this).hasClass("parent-clicked")) {
+      $(this).addClass("parent-clicked");
+    } else {
+      location.href = this.href;
+    }
+  });
+</script>
+<script>
+  $(function () {
+    $(
+      '.navbar-nav > .nav-item > a[href="' + location.pathname.slice(0) + '"]'
+    ).addClass("active");
+  });
+</script>

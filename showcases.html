@@ -1,0 +1,70 @@
+---
+title: Showcases
+layout: internal
+---
+
+<!-- Page Header Section -->
+<!-- <div class="container-fluid d-lg-block d-none background-indigo-500">
+  <div class="container py-5">
+    <div class="row no-gutters align-items-center justify-content-between">
+      <h3 class="text-white">Showcases</h3>
+      <p class="text-white mb-0">
+        For the publications, please see the
+        <a class="learn-more-white" href="{{ site.baseurl }}/publications"
+          >publications page</a
+        >
+      </p>
+    </div>
+  </div>
+</div> -->
+<!-- <div class="container-fluid d-lg-block d-none py-2 background-indigo-100"></div> -->
+
+<div class="container-fluid d-lg-none d-block background-indigo-100">
+  <div class="container py-4">
+    <h3 class="color-indigo-900">Showcases</h3>
+  </div>
+</div>
+
+<!-- Showcases List Section -->
+<div class="container-fluid">
+  <div class="container py-3">
+    {% assign showcases = site.showcases %} {% for showcase in showcases %}
+    <div class="row no-gutters news-card align-items-center py-4 my-3">
+      <div class="col-lg-4 col-md-12 mb-lg-0 mb-4 px-lg-3 px-0">
+        {% if showcase.image == "" %}
+        <img
+          class="w-100 bordered"
+          src="{{ site.baseurl }}/assets/images/showcases/default.png"
+          alt="{{ showcase.title }}"
+        />
+        {% else %}
+        <img
+          class="w-100 bordered"
+          src="{{ site.baseurl }}/assets/images/showcases/{{ showcase.image }}"
+          alt="{{ showcase.title }}"
+        />
+        {% endif %}
+      </div>
+
+      <div class="col-lg-8 col-md-12 px-lg-3 px-4">
+        <h4 class="color-gray-950">{{ showcase.title }}</h4>
+        <p class="color-gray-900 mb-4">{{ showcase.description }}</p>
+        <a
+          class="read-more d-lg-inline-block d-none"
+          href="{{ showcase.link }}"
+          target="_blank"
+          rel="noopener"
+          >{{ showcase.button }}</a
+        >
+        <a
+          class="read-mobile d-block d-lg-none"
+          href="{{ showcase.link }}"
+          target="_blank"
+          rel="noopener"
+          >{{ showcase.button }}</a
+        >
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
