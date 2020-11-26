@@ -1,10 +1,10 @@
 title: REScala
-email: salvaneschi@st.informatik.tu-darmstadt.de
+email: mezini@st.informatik.tu-darmstadt.de
 description: >- # this means to ignore newlines until "baseurl:"
   REScala is the most advanced solution for functional reactive programming on the JVM and the Web.
-baseurl: "/rescala"
-url: "https://uracreative.github.io"
-twitter_username: #
+baseurl: "/"
+url: "https://www.rescala-lang.com/"
+twitter_username: stg_darmstadt
 github_username: rescala-lang
 
 # Build settings
