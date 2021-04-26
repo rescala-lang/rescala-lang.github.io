@@ -275,16 +275,10 @@ title: Publications
     var container = $("#publications-container");
     var items = $(".article");
 
-    items.each(function () {
-      var BCDate = $(this).attr("data-event-date");
-      var standardDate = new Date(BCDate).getTime();
-      $(this).attr("data-event-date", standardDate);
-    });
-
     items
       .sort(function (a, b) {
-        a = parseFloat($(a).attr("data-event-date"));
-        b = parseFloat($(b).attr("data-event-date"));
+        a = $(a).attr("data-event-date");
+        b = $(b).attr("data-event-date");
         return a > b ? -1 : a < b ? 1 : 0;
       })
       .each(function () {
