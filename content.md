@@ -262,7 +262,7 @@ handler1.remove()
 
 ## Signal Expressions
 
-Signals are defined by the syntax `Signal{`_sigexpr_`}`, where _sigexpr_ is a side effect-free expression.
+Signals are defined by the syntax `Signal{sigexpr}`, where _sigexpr_ is a side effect-free expression.
 A signal that carries integer values has the type `Signal[Int]`.
 
 Inside a signal expression other signals should be accessed with the `()` operator.
@@ -1055,10 +1055,10 @@ val s = Signal{ increment(a()) + 1 }
 A more academic presentation of _REScala_ is in [[7]](#ref).
 A complete bibliography on reactive programming is beyond the scope of this work.
 The interested reader can refer to [[1]](#ref) for an overview of reactive
-programming and to[[8]](#ref) for the issues concerning the integration of RP
+programming and to [[8]](#ref) for the issues concerning the integration of RP
 with object-oriented programming.
 
-_REScala_ builds on ideas originally developed in EScala [3](#ref)
+_REScala_ builds on ideas originally developed in EScala [[3]](#ref)
 -- which supports event combination and implicit events.
 Other reactive languages directly represent time-changing values and remove
 inversion of control.
@@ -1108,14 +1108,8 @@ OOPSLA ’09, pages 1–20. ACM, 2009.
 
 [7] _REScala: Bridging between objectoriented and functional style in reactive applications._<br>
 G. Salvaneschi, G. Hintz, and M. Mezini.<br>
-
-<!--In Proceedings of the 13th International Conference on Aspect-Oriented Software Development,-->
-
 AOSD ’14, New York, NY, USA, Accepted for publication, 2014. ACM.
 
 [8] _Reactive behavior in object-oriented applications: an analysis and a research roadmap._<br>
 G. Salvaneschi and M. Mezini.<br>
-
-<!--In Proceedings of the 12th annual international conference on Aspect-oriented software development,-->
-
 AOSD ’13, pages 37–48, New York, NY, USA, 2013. ACM.
