@@ -148,7 +148,7 @@ title: Publications
       {% for publication in publications %}
       <div
         class="col-lg-6 col-sm-12 article my-2 publications year-all all_types {{ publication.type }} year-{{ publication.date | date: '%Y' }}"
-        data-event-date="{{ publication.date }}"
+        data-event-date="{{ publication.date | date: '%Y-%m-%d' }}"
       >
         <div
           class="publication-card h-100 flex-column"
