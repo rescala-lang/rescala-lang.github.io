@@ -1,5 +1,5 @@
 ---
-date: 2018-04-01 12:00 +0200
+date: 2018-04-01
 type: "publication"
 name: "Reactive programming experience with REScala"
 abstract: "Reactive programming is a recent programming paradigm that specifically targets reactive applications. Over the years, a number of reactive languages have been proposed, with different combinations of features, and various target domains.

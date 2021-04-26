@@ -1,5 +1,5 @@
 ---
-date: 2016-05-01 12:00 +0200
+date: 2016-05-01
 type: "publication"
 name: "Debugging for Reactive Programming"
 abstract: "Reactive programming is a recent programming technique that provides dedicated language abstractions for reactive software. Reactive programming relieves developers from manually updating outputs when the inputs of a computation change, it overcomes a number of well-know issues of the Observer design pattern, and it makes programs more comprehensible. Unfortunately, complementing the new paradigm with proper tools is a vastly unexplored area. Hence, as of now, developers can embrace reactive programming only at the cost of a more challenging development process.

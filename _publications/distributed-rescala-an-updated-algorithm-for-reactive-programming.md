@@ -1,5 +1,5 @@
 ---
-date: 2014-10-01 12:00 +0200
+date: 2014-10-01
 type: "publication"
 name: "Distributed REScala: An Update Algorithm for Distributed Reactive Programming"
 abstract: "Reactive programming improves the design of reactive applications by relocating the logic for managing dependencies between dependent values away from the application logic to the language implementation. Many distributed applications are reactive. Yet, existing change propagation algorithms are not suitable in a distributed setting.

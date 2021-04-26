@@ -1,5 +1,5 @@
 ---
-date: 2016-05-01 12:00 +0200
+date: 2016-05-01
 type: "publication"
 name: "Debugging Reactive Programming with Reactive Inspector"
 abstract: "Reactive programming provides dedicated language abstractions for reactive software, relieving developers from manually updating outputs when the inputs of a computation change. Unfortunately, complementing the new paradigm with proper tools that support coding activities is a vastly unexplored area.

@@ -1,5 +1,5 @@
 ---
-date: 2013-09-01 12:00 +0200
+date: 2013-09-01
 type: "publication"
 name: "Towards Distributed Reactive Programming"
 abstract: "Reactive applications is a wide class of software that responds to user input, network messages, and other events. Recent research on reactive languages successfully addresses the drawbacks of the Observer pattern – the traditional way reactive applications are implemented in the object-oriented setting – by introducing time-changing values and other ad-hoc programming abstractions.

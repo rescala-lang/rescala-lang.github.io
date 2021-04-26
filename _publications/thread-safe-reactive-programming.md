@@ -1,5 +1,5 @@
 ---
-date: 2018-10-01 12:00 +0200
+date: 2018-10-01
 type: "publication"
 name: "Thread-Safe Reactive Programming"
 abstract: "The execution of an application written in a reactive language involves transfer of data and control flow between imperative and reactive abstractions at well-defined points. In a multi-threaded environment, multiple such interactions may execute concurrently, potentially causing data races and event ordering ambiguities. Existing RP languages either disable multi-threading or handle it at the cost of reducing expressiveness or weakening consistency. This paper proposes a model for thread-safe reactive programming (RP) that ensures abort-free strict serializability under concurrency while sacrificing neither expressiveness nor consistency. We also propose an architecture for integrating a corresponding scheduler into the RP language runtime, such that thread-safety is provided 'out-of-the-box' to the applications.

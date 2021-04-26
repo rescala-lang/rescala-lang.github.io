@@ -1,5 +1,5 @@
 ---
-date: 2014-10-01 12:00 +0200
+date: 2014-10-01
 type: "publication"
 name: "i3QL: Language-Integrated Live Data Views"
 abstract: "An incremental computation updates its result based on a change to its input, which is often an order of magnitude faster than a recomputation from scratch. In particular, incrementalization can make expensive computations feasible for settings that require short feedback cycles, such as interactive systems, IDEs, or (soft) real-time systems.

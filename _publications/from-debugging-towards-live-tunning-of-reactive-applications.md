@@ -1,5 +1,5 @@
 ---
-date: 2018-11-01 12:00 +0200
+date: 2018-11-01
 type: "publication"
 name: "From Debugging Towards Live Tuning of Reactive Applications"
 abstract: "Directly visualizing the effect of changes to applications improves developers productivity as they gain immediate insights on the resulting application behavior. Yet, immediate feedback requires a representation of the dataflow in the application to correctly propagate and apply the effect of the changes.

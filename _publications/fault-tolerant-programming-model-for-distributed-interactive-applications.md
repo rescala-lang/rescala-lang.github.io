@@ -1,5 +1,5 @@
 ---
-date: 2019-10-01 12:00 +0200
+date: 2019-10-01
 type: "publication"
 name: "A Fault-Tolerant Programming Model for Distributed Interactive Applications"
 abstract: "Ubiquitous connectivity of web, mobile, and IoT computing platforms has fostered a variety of distributed applications with decentralized state. These applications execute across multiple devices with varying reliability and connectivity. Unfortunately, there is no declarative fault-tolerant programming model for distributed interactive applications with an inherently decentralized system model.
