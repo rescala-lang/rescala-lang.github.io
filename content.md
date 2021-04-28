@@ -13,6 +13,8 @@ The manual introduces the concepts related to functional reactive programming an
 
 # Setup
 
+Note: Starting May 1. 2021 Bintray shut down their repository hosting, thus making older versions of REScala unavailable – including the version used for this manual. Please contact us in case you need assistance.
+
 Create a `build.sbt` file in an empty folder with the following contents:
 
 ```scala
