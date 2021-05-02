@@ -13,13 +13,13 @@ The manual introduces the concepts related to functional reactive programming an
 
 # Setup
 
-Note: Starting May 1. 2021 Bintray shut down their repository hosting, thus making older versions of REScala unavailable – including the version used for this manual. Please contact us in case you need assistance.
+Note: Starting May 1. 2021 Bintray shut down their repository hosting, thus making older versions of REScala unavailable – including the version used for this manual. We host a mirror of those versions (see resolver below), but please contact us in case you encounter issues.
 
 Create a `build.sbt` file in an empty folder with the following contents:
 
 ```scala
 scalaVersion := "2.12.6"
-resolvers += Resolver.bintrayRepo("stg-tud", "maven")
+resolvers += ("STG old bintray repo" at "http://www.st.informatik.tu-darmstadt.de/maven/").withAllowInsecureProtocol(true)
 libraryDependencies += "de.tuda.stg" %% "rescala" % "0.24.0"
 ```
 
