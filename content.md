@@ -775,7 +775,7 @@ assert(test == 1)
 
 ## Flatten
 
-The `flatten` function is used to ``flatten'' nested reactives.
+The `flatten` function is used to “flatten” nested reactives.
 
 It can, for instance, be used to detect if any signal within a collection of signals
 fired a changed event:
