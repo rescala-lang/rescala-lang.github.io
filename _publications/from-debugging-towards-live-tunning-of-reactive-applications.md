@@ -15,5 +15,6 @@ collaborators:
   - Guido Salvaneschi
   - Mira Mezini
 event: "LIVE 2018"
-link: "https://doi.org/10.1145/3360570"
+pdf: "http://www.st.informatik.tu-darmstadt.de/preprints/From-Debugging-Towards-Live-Tuning-of-Reactive-Applications.pdf"
+link: "https://2018.splashcon.org/details/live-2018-papers/10/From-Debugging-Towards-Live-Tuning-of-Reactive-Applications"
 ---
