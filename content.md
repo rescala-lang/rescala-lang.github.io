@@ -5,6 +5,9 @@ The full API is covered in the [scaladoc](../scaladoc/rescala/index.html) especi
 More details can be found in [[7, 3]](#ref).
 The manual introduces the concepts related to functional reactive programming and event-based programming from a practical perspective.
 
+Also see the introductory [video lecture](https://www.youtube.com/watch?v=iRh7UiclElk) that gives give a step by step introduction to developing applications in REScala.
+
+
 - The chapter [The Basics](#the-basics) covers how to get started and integrate _REScala_ into a program, and
 - The chapter [Common combinators](#common-combinators) presents _REScalas_ most common features for composing signals and events.
 - The chapter [Combinators](#combinators) describes other combinators of _REScalas_.
