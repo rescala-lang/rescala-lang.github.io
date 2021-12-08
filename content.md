@@ -16,21 +16,22 @@ Also see the introductory [video lecture](https://www.youtube.com/watch?v=iRh7Ui
 
 # Setup
 
-Note: Starting May 1. 2021 Bintray shut down their repository hosting, thus making older versions of REScala unavailable – including the version used for this manual. We host a mirror of those versions (see resolver below), but please contact us in case you encounter issues.
 
 Create a `build.sbt` file in an empty folder with the following contents:
 
 ```scala
-scalaVersion := "2.12.6"
-resolvers += ("STG old bintray repo" at "http://www.st.informatik.tu-darmstadt.de/maven/").withAllowInsecureProtocol(true)
-libraryDependencies += "de.tuda.stg" %% "rescala" % "0.24.0"
+// should also work on any recent version of the Scala 2.11 - 3 branches
+// including ScalaJS 1.0 and ScalaNative 0.4
+// however, some features are unavailable in Scala 3
+scalaVersion := "2.13.7"
+libraryDependencies += "de.tu-darmstadt.stg" %% "rescala" % "0.31.0"
 ```
 
 Install [sbt](http://www.scala-sbt.org/) and run `sbt console` inside the folder,
 this should allow you to follow along the following examples.
 
-The code examples in the manual serve as a self contained Scala REPL session,
-all code is executed and results are annotated as comments using [tut](https://github.com/tpolecat/tut).
+
+The code examples in the manual serve as a self contained Scala REPL session.
 Most code blocks can be executed on their own when adding this import,
 but some require definitions from the prior blocks.
 To use all features of _REScala_ the only required import is:
@@ -38,6 +39,15 @@ To use all features of _REScala_ the only required import is:
 ```scala
 import rescala.default._
 ```
+
+
+Note: Starting May 1. 2021 Bintray shut down their repository hosting, thus making older versions of REScala unavailable. We host a mirror of those versions (see resolver below), but please contact us in case you encounter issues.
+
+```scala
+resolvers += ("STG old bintray repo" at "http://www.st.informatik.tu-darmstadt.de/maven/").withAllowInsecureProtocol(true)
+libraryDependencies += "de.tuda.stg" %% "rescala" % "0.30.0"
+```
+
 
 <!--# Declarative Events-->
 
@@ -676,9 +686,9 @@ val word = Evt[String]
 val count = Evt[Int]
 val reset = Evt[Unit]
 val result = Events.foldAll(""){ acc => Events.Match(
-  reset >> (_ => ""),
-  word >> identity,
-  count >> (acc * _),
+  reset act (_ => ""),
+  word act identity,
+  count act (acc * _),
 )}
 
 val o1 = result.observe(r => println(r))
