@@ -10,7 +10,7 @@ collaborators:
   - Guido Salvaneschi
   - Ragnar Mogk
   - Mira Mezini
-pdf: "http://www.guidosalvaneschi.com/attachments/papers/2014_Distributed_REScala_An_Update_Algorithm_for_Distributed_Reactive_Programming_pdf.pdf"
+pdf: "assets/pdf/2014 Distributed REScala.pdf"
 event: "OOPSLA 2014"
 link: "https://dl.acm.org/citation.cfm?id=2660240"
 ---

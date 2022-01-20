@@ -8,7 +8,7 @@ We investigate a primary issue in the field: debugging programs in the reactive 
 collaborators:
   - Guido Salvaneschi
   - Mira Mezini
-pdf: "http://www.guidosalvaneschi.com/attachments/papers/2016_Debugging-for-Reactive-Programming_pdf.pdf"
+pdf: "assets/pdf/2016 Reactive Inspector.pdf"
 event: "ICSE 2016"
 link: "https://dl.acm.org/citation.cfm?id=2893174"
 ---

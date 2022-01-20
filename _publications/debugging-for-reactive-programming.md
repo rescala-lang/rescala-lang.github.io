@@ -8,7 +8,7 @@ In this paper, we investigate a primary issue in the field: debugging programs i
 collaborators:
   - Guido Salvaneschi
   - Mira Mezini
-pdf: "http://www.guidosalvaneschi.com/attachments/papers/2016_Debugging-for-Reactive-Programming_pdf.pdf"
+pdf: "assets/pdf/2016 Debugging RP.pdf"
 event: "ICSE 2016"
 link: "https://dl.acm.org/citation.cfm?id=2884815"
 ---

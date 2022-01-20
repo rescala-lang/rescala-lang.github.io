@@ -8,7 +8,7 @@ collaborators:
   - Guido Salvaneschi
   - Mira Mezini
   - Jacques Noye
-pdf: "http://www.guidosalvaneschi.com/attachments/papers/2014_JEScala-Modular-Coordination-with-Declarative-Events-and-Joins_pdf.pdf"
+pdf: "assets/pdf/2014 JEScala.pdf"
 event: "MODULARITY 2014"
 link: "https://dl.acm.org/citation.cfm?id=2577082"
 ---

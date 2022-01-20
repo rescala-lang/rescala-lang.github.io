@@ -13,4 +13,5 @@ collaborators:
   - Mira Mezini
 event: "Programming Experience Workshop 2018"
 link: "https://dl.acm.org/citation.cfm?id=3214337"
+pdf: "assets/pdf/2018 Reactive Experience.pdf"
 ---

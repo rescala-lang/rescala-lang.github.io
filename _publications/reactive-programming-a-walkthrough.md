@@ -7,7 +7,7 @@ collaborators:
   - Guido Salvaneschi
   - Alessandro Margara
   - Giordano Tamburrelli
-pdf: "https://margara.faculty.polimi.it/papers/icse15_tech_briefing.pdf"
+pdf: "assets/pdf/2015 Reactive Programming Walkthrough.pdf"
 event: "ICSE 2015"
 link: "http://ieeexplore.ieee.org/document/7203125/"
 ---

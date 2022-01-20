@@ -6,7 +6,7 @@ abstract: "Reactive applications demand for detecting the changes that occur in 
 collaborators:
   - Alessandro Margara
   - Guido Salvaneschi
-pdf: "http://www.guidosalvaneschi.com/attachments/papers/2013_Ways-to-React-Comparing-Reactive-Languages-and-Complex-Event-Processing_pdf.pdf"
+pdf: "assets/pdf/2013 Ways to React.pdf"
 event: "SPLASH 2013"
 link: "http://www.guidosalvaneschi.com/attachments/papers/2013_Ways-to-React-Comparing-Reactive-Languages-and-Complex-Event-Processing_pdf.pdf"
 ---
