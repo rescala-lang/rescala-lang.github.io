@@ -8,7 +8,7 @@ For such distributed, interactive, and collaborative applications, we currently 
 
 To answer this question, we present a novel approach to automatic fault tolerance using a high-level programming paradigm. Our goal is to provide future developers with a paradigm that reduces the challenge posed by failures in interactive applications similar to how a garbage collector reduces the challenge of managing memory. To do so, our programming paradigm abstracts from the notion of changes in data, thus removing the need to handle failure cases differently and providing developers a single set of properties to always rely on."
 collaborators:
-	- Ragnar Mogk
+  - Ragnar Mogk
 event: "Dissertation"
 link: "https://tuprints.ulb.tu-darmstadt.de/19403/"
 ---
