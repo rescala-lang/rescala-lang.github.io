@@ -138,7 +138,7 @@ a.set(10)
 println(a.now)
 // 10
 
-a.transform( val => val + 1 )
+a.transform( value => value + 1 )
 println(a.now)
 // 11
 
