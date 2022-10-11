@@ -300,9 +300,9 @@ println((a.now, b.now, c.now))
 // (4,5,9)
 ```
 
-The signal `c` is a dependent / derivative of the vars `a` and `b`, meaning that the values of `s` depends on both `a` and `b`.
+The signal `c` is a dependent / derivative of the vars `a` and `b`, meaning that the values of `c` depends on both `a` and `b`.
 
-Here are some more example of using signal expressions:
+Here are some more examples of using signal expressions:
 
 ```scala
 val a = Var(0)
