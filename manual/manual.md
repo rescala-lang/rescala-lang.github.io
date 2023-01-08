@@ -15,8 +15,6 @@ Also see the introductory [video lecture](https://www.youtube.com/watch?v=iRh7Ui
 
 # Setup
 
-## Setup
-
 Create a `build.sbt` file in an empty folder with the following contents:
 
 ```scala
@@ -497,8 +495,6 @@ e fire 2
 e fire 11
 // 11
 ```
-
-# Combinators
 
 ## Count Signal
 
