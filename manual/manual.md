@@ -591,11 +591,11 @@ Example:
 
 ```scala
 val s = Var(5)
-// s: Var[Int] = (rescala.parrp.ParRP$ParRPState@19599603)
+// s: Var[Int] = (rescala.parrp.ParRP$ParRPState@62458e7e)
 val e = s.change
-// e: Event[rescala.operator.Diff[Int]] = »«'(rescala.parrp.ParRP$ParRPState@758f426)
+// e: Event[rescala.operator.Diff[Int]] = »«'(rescala.parrp.ParRP$ParRPState@1c9164f1)
 val o1 = e observe println
-// o1: rescala.core.Disconnectable = (rescala.parrp.ParRP$ParRPState@64d394e5)
+// o1: rescala.core.Disconnectable = (rescala.parrp.ParRP$ParRPState@4696e669)
 
 s.set(10)
 // Diff(Value(5), Value(10))
@@ -782,9 +782,9 @@ c.test()
 ```
 
 The following code instead establishes only a dependency between
-```b``` and ```s```.
+`b` and `s`.
 
-```scala mdoc:silent:nest
+```scala
 val s = Signal{ a.now + b() }
 ```
 
@@ -882,11 +882,11 @@ the var is reevaluated.
 ```scala
 class Foo(val x: Int){}
 val foo = new Foo(1)
-// foo: Foo = repl.MdocSession$MdocApp$Foo$1@18ac5b83
+// foo: Foo = repl.MdocSession$MdocApp$Foo$1@582d0b6b
 val varFoo = Var(foo)
-// varFoo: Var[Foo] = (rescala.parrp.ParRP$ParRPState@abc1e05)
+// varFoo: Var[Foo] = (rescala.parrp.ParRP$ParRPState@105e5baf)
 val s = Signal{ varFoo().x + 10 }
-// s: Signal[Int] = (rescala.parrp.ParRP$ParRPState@4a0522b0)
+// s: Signal[Int] = (rescala.parrp.ParRP$ParRPState@77f13b9)
 println(s.now)
 // 11
 varFoo set (new Foo(2))
@@ -902,11 +902,11 @@ confusing for the reader and should be avoided when possible.
 /* WRONG - DON'T DO THIS */
 class Foo(init: Int) { var x = init }
 val foo = new Foo(1)
-// foo: Foo = repl.MdocSession$MdocApp$Foo$2@3289e3a9
+// foo: Foo = repl.MdocSession$MdocApp$Foo$2@762b1891
 val varFoo = Var(foo)
-// varFoo: Var[Foo] = (rescala.parrp.ParRP$ParRPState@4883c638)
+// varFoo: Var[Foo] = (rescala.parrp.ParRP$ParRPState@466d236c)
 val s = Signal{ varFoo().x + 10 }
-// s: Signal[Int] = (rescala.parrp.ParRP$ParRPState@2225a51b)
+// s: Signal[Int] = (rescala.parrp.ParRP$ParRPState@248c9b2d)
 println(s.now)
 // 11
 foo.x = 2
@@ -943,11 +943,11 @@ has a constant value 2 and is not updated when the var changes.
 
 ```scala
 val a = Var(1)
-// a: Var[Int] = (rescala.parrp.ParRP$ParRPState@4156134d)
+// a: Var[Int] = (rescala.parrp.ParRP$ParRPState@5b91b6de)
 val b: Int = increment(a.now) // b is not reactive!
 // b: Int = 2 // b is not reactive!
 val s = Signal{ b + 1 } // s is a constant signal with value 2
-// s: Signal[Int] = (rescala.parrp.ParRP$ParRPState@4d237ca5)
+// s: Signal[Int] = (rescala.parrp.ParRP$ParRPState@64be10fb)
 ```
 
 The following solution is syntactically correct and the signal
